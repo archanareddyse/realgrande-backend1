@@ -12,7 +12,7 @@ app.get("/", async (request, response) => {
   }
 });
 
-app.get("/searchresults/:county", async (request, response) => {
+app.get("/searchhouses/:county", async (request, response) => {
     const houses = await Houses.find({county:request.params.county});
     try {
       response.send(houses);
@@ -21,7 +21,7 @@ app.get("/searchresults/:county", async (request, response) => {
     }
 });
 
-app.get("/searchresults/:id", async (request, response) => {
+app.get("/searchhouse/:id", async (request, response) => {
   const houses = await Houses.find({_id:request.params.id});
   try {
     response.send(houses);
