@@ -13,7 +13,7 @@ const db = module.exports =()=>{
     console.log("before")
     mongoose.set('strictQuery', true)
     //mongoose.connect('mongodb+srv://cluster0.ck6b0.mongodb.net/realgrande?retryWrites=true&w=majority', { user: process.env.DBUSERNAME, pass: process.env.DBPASSWORD, useNewUrlParser: true, useUnifiedTopology: true })
-    mongoose.connect('mongodb+srv://cluster0.mfa68.mongodb.net/realgrande?retryWrites=true&w=majority', { user: process.env.DBUSERNAME, pass: process.env.DBPASSWORD, useNewUrlParser: true, useUnifiedTopology: true })
+    mongoose.connect('mongodb+srv://cluster0.asvv07o.mongodb.net/realgrande?retryWrites=true&w=majority', { user: process.env.DBUSERNAME, pass: process.env.DBPASSWORD, useNewUrlParser: true, useUnifiedTopology: true })
     
     console.log("MongoDB Connection is Successful")
   } catch(error){
