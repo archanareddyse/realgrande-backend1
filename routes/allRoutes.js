@@ -13,7 +13,7 @@ app.get("/", async (request, response) => {
 });
 
 app.get("/searchresults/:county", async (request, response) => {
-    const houses = await Houses.find({county:request.params.country});
+    const houses = await Houses.find({county:request.params.county});
     try {
       response.send(houses);
     } catch (error) {
